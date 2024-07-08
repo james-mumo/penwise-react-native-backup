@@ -13,8 +13,8 @@
 
 ## Table of Contents
 
-- [Installation Steps](#installation-steps)
-- [Usage](#usage)
+- [Prerequisites](#prerequisites)
+- [App Installation and Running in Development Mode](#usage)
 - [Folder Structure](#folder-structure)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
@@ -35,7 +35,7 @@ in the `package.json` for the React Native Expo app.
 | TypeScript    | >= 4.0.0   |
 
 
-## Run
+## App Installation and Running in Development Mode
 
 1. Clone the repository:
 
@@ -63,32 +63,38 @@ in the `package.json` for the React Native Expo app.
 ```
 
 
-3. Install dependencies:
+5. Run the app in development mode:
 
 ```sh
-    npm install
+    # Start the Expo Development Server 
+    npx expo start
+
+    # Ensure your Android device is connected via USB debugging
+    npx expo start --android
+
+    # Ensure your iOS device is connected via USB or open in simulator
+    npx expo start --ios
+
+    # To run on a device with the Expo-Go app ensure the device running
+    # Expo-Go app is in the same network as your machine, then scan the qr code and hit {r} to refresh whenever you make changes.
+
+```
+
+## Build
+
+```bash
+
+    # For building an Android APK:
+    npx expo build:android
+
+    # For building an iOS IPA file:
+    npx expo build:ios
+
 ```
 
 
-Instructions on how to use the app. Include any configuration settings if necessary.
 
-### Development
 
-Steps to run the app in development mode.
-
-1. Start the Expo development server:
-
-npm start
-
-2. Follow Expo CLI instructions to run the app on an emulator or physical device.
-
-### Production
-
-Instructions for building and deploying the app for production, if applicable.
-
-## Folder Structure
-
-Explain the structure of your project directory and key files.
 
 
 
