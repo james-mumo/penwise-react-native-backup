@@ -171,7 +171,7 @@ in the `package.json` for the React Native Expo app.
 
 ## Technologies Used
 
-``bash
+```bash
     - Expo
     - @react-native-async-storage/async-storage
     - @react-native-community/datetimepicker
@@ -189,7 +189,7 @@ in the `package.json` for the React Native Expo app.
     - @types/jest
     - tailwindcss
     - typescript
-``
+```
 
 ## Contributing
 
