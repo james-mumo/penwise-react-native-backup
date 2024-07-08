@@ -19,6 +19,8 @@
 - [Tests](#tests)
 - [Project Directory Structure](#project-directory-structure)
 - [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
 
 
@@ -169,22 +171,26 @@ in the `package.json` for the React Native Expo app.
 
 ## Technologies Used
 
-- Expo
-- @react-native-async-storage/async-storage
-- @react-native-community/datetimepicker
-- @react-native-picker/picker
-- @react-navigation/bottom-tabs
-- @react-navigation/native
-- axios
-- expo-document-picker
-- expo-linking
-- nativewind
-- react-native-animatable
-- react-native-appwrite
-- react-native-reanimated
-- react-navigation
-- @types/jest
-- tailwindcss
-- typescript
+``sh
+    - Expo
+    - @react-native-async-storage/async-storage
+    - @react-native-community/datetimepicker
+    - @react-native-picker/picker
+    - @react-navigation/bottom-tabs
+    - @react-navigation/native
+    - axios
+    - expo-document-picker
+    - expo-linking
+    - nativewind
+    - react-native-animatable
+    - react-native-appwrite
+    - react-native-reanimated
+    - react-navigation
+    - @types/jest
+    - tailwindcss
+    - typescript
+``
 
+## Contributing
 
+## License
