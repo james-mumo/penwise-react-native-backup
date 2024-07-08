@@ -188,7 +188,7 @@ in the `package.json` for the React Native Expo app.
     - react-navigation
     - @types/jest
     - tailwindcss
-- typescript
+    - typescript
 ``
 
 ## Contributing
