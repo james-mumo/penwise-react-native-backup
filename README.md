@@ -13,7 +13,7 @@
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)- 
+- [Prerequisites](#prerequisites)
 - [App Installation and Running in Development Mode](#app-installation-and-running-in-development-mode)
 - [Building the Application](#building-the-application)
 - [Tests](#tests)
@@ -171,7 +171,7 @@ in the `package.json` for the React Native Expo app.
 
 ## Technologies Used
 
-``sh
+``bash
     - Expo
     - @react-native-async-storage/async-storage
     - @react-native-community/datetimepicker
@@ -188,7 +188,7 @@ in the `package.json` for the React Native Expo app.
     - react-navigation
     - @types/jest
     - tailwindcss
-    - typescript
+- typescript
 ``
 
 ## Contributing
