@@ -5,8 +5,7 @@ Brief description of your project.
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
+- [Installation Steps](#installation-steps)
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
 - [Technologies Used](#technologies-used)
@@ -15,19 +14,27 @@ Brief description of your project.
 
 ## Introduction
 
-Brief introduction to the project, its purpose, and key features.
+```bash
+    This React Native Expo app enables user authentication for signup and login, facilitates management of journal entries including creation, editing, and deletion with categorization options (e.g., Personal, Work, Travel), offers a summary view of entries by selected periods, and allows users to update their username and password settings
+```
 
-## Features
-
-List of key features or functionalities provided by the app.
-
-## Installation
-
-Instructions on how to install and set up the project locally.
 
 ### Prerequisites
 
-List any software or libraries that need to be installed before setting up the project.
+```bash
+    Before setting up the project, ensure you have the following installed:
+
+    | Binaries      | Version    |
+    | ------------- | ---------- |
+    | Node.js       | >= LTS     |
+    | npm           | >= 6.14.6  |
+    | Expo CLI      | >= 4.0.0   |
+    | TypeScript    | >= 4.0.0   |
+    | Tailwind CSS  | >= 3.0.0   |
+
+    These are necessary for installing dependencies and running scripts specified in your `package.json` for the React Native Expo app.
+```
+
 
 ### Installation Steps
 
