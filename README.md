@@ -1,10 +1,17 @@
 # Penwise Journalling App
 
-Brief description of your project.
+
+```bash
+    This React Native Expo app enables user authentication for signup and login, 
+    facilitates management of journal entries including creation, editing, and 
+    deletion with categorization options (e.g., Personal, Work, Travel), 
+    offers a summary view of entries by selected periods, and allows users
+     to update their username and password settings
+```
+
 
 ## Table of Contents
 
-- [Introduction](#introduction)
 - [Installation Steps](#installation-steps)
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
@@ -12,26 +19,19 @@ Brief description of your project.
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduction
-
-```bash
-    This React Native Expo app enables user authentication for signup and login, facilitates management of journal entries including creation, editing, and deletion with categorization options (e.g., Personal, Work, Travel), offers a summary view of entries by selected periods, and allows users to update their username and password settings
-```
-
 
 ### Prerequisites
-
 
 Before setting up the project, ensure you have the following installed:
 
 
 | Binaries      | Version    |
 | ------------- | ---------- |
-| Node.js       | >= LTS     |
-| npm           | >= 6.14.6  |
-| Expo CLI      | >= 4.0.0   |
+| Node.js       | >= 18.9.1  |
+| npm           | >= 9.2.0   |
+| Expo CLI      | >= 6.3.10  |
 | TypeScript    | >= 4.0.0   |
-| Tailwind CSS  | >= 3.0.0   |
+
 
 These are necessary for installing dependencies and running scripts specified in your `package.json` for the React Native Expo app.
 
