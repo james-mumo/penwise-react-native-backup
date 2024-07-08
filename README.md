@@ -23,6 +23,7 @@ Brief description of your project.
 
 ```bash
     Before setting up the project, ensure you have the following installed:
+```
 
     | Binaries      | Version    |
     | ------------- | ---------- |
@@ -33,7 +34,6 @@ Brief description of your project.
     | Tailwind CSS  | >= 3.0.0   |
 
     These are necessary for installing dependencies and running scripts specified in your `package.json` for the React Native Expo app.
-```
 
 
 ### Installation Steps
