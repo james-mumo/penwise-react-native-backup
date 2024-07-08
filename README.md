@@ -52,7 +52,7 @@ in the `package.json` for the React Native Expo app.
 3. Setup Env Variables:
 
 ```sh
-    create a .env file and add:
+    # create a .env file and add the following variable:
     BASE_URL = <backend_url>
 ```
 
