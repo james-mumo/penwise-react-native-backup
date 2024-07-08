@@ -13,12 +13,13 @@
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)
-- [App Installation and Running in Development Mode](#usage)
-- [Folder Structure](#folder-structure)
+- [Prerequisites](#prerequisites)- 
+- [App Installation and Running in Development Mode](#app-installation-and-running-in-development-mode)
+- [Building the Application](#building-the-application)
+- [Tests](#tests)
+- [Project Directory Structure](#project-directory-structure)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 
 ## Prerequisites
@@ -80,7 +81,7 @@ in the `package.json` for the React Native Expo app.
 
 ```
 
-## Build
+## Building the Application
 
 ```bash
 
