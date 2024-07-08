@@ -21,19 +21,19 @@ Brief description of your project.
 
 ### Prerequisites
 
-```bash
-    Before setting up the project, ensure you have the following installed:
-```
 
-    | Binaries      | Version    |
-    | ------------- | ---------- |
-    | Node.js       | >= LTS     |
-    | npm           | >= 6.14.6  |
-    | Expo CLI      | >= 4.0.0   |
-    | TypeScript    | >= 4.0.0   |
-    | Tailwind CSS  | >= 3.0.0   |
+Before setting up the project, ensure you have the following installed:
 
-    These are necessary for installing dependencies and running scripts specified in your `package.json` for the React Native Expo app.
+
+| Binaries      | Version    |
+| ------------- | ---------- |
+| Node.js       | >= LTS     |
+| npm           | >= 6.14.6  |
+| Expo CLI      | >= 4.0.0   |
+| TypeScript    | >= 4.0.0   |
+| Tailwind CSS  | >= 3.0.0   |
+
+These are necessary for installing dependencies and running scripts specified in your `package.json` for the React Native Expo app.
 
 
 ### Installation Steps
