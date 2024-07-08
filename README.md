@@ -1,14 +1,15 @@
 # Penwise Journalling App
 
+<div align="center">
 
 ```bash
     This React Native Expo app enables user authentication for signup and login, 
-    facilitates management of journal entries including creation, editing, and 
-    deletion with categorization options (e.g., Personal, Work, Travel), 
-    offers a summary view of entries by selected periods, and allows users
-     to update their username and password settings
+    facilitates management of journal entries including creation, editing, 
+    and deletion with categorization options (e.g., Personal, Work, Travel),
+    The app also offers a summary view of entries by selected periods, categories
+    and allows users to update their username and password settings.
 ```
-
+</div>
 
 ## Table of Contents
 
@@ -20,10 +21,11 @@
 - [License](#license)
 
 
-### Prerequisites
+## Prerequisites
 
-Before setting up the project, ensure you have the following installed:
-
+Before setting up the project, ensure you have the following installed.
+These are necessary for installing dependencies and running scripts specified
+in the `package.json` for the React Native Expo app.
 
 | Binaries      | Version    |
 | ------------- | ---------- |
@@ -33,22 +35,40 @@ Before setting up the project, ensure you have the following installed:
 | TypeScript    | >= 4.0.0   |
 
 
-These are necessary for installing dependencies and running scripts specified in your `package.json` for the React Native Expo app.
-
-
-### Installation Steps
+## Run
 
 1. Clone the repository:
 
-git clone <repository_url>
+```sh
+    git clone https://github.com/james-mumo/PenWise-Journaling-App.git
+```
 
 2. Navigate to the project directory:
 
-cd project-directory
+```sh
+    cd frontend
+```
+
+3. Setup Env Variables:
+
+```sh
+    create a .env file and add:
+    BASE_URL = <backend_url>
+```
+
+4. Install dependencies:
+
+```sh
+    npm install
+```
+
 
 3. Install dependencies:
 
-npm install
+```sh
+    npm install
+```
+
 
 Instructions on how to use the app. Include any configuration settings if necessary.
 
