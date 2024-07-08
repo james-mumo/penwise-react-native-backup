@@ -93,11 +93,16 @@ in the `package.json` for the React Native Expo app.
 ```
 
 
+## Tests 
+
+```bash
+
+```
 
 
 
 
-
+## Project Directory Structure
 
 ```bash
 /frontend
@@ -163,18 +168,22 @@ in the `package.json` for the React Native Expo app.
 
 ## Technologies Used
 
-List of technologies, frameworks, and libraries used in the project.
-
-- React Native
 - Expo
-- List others...
+- @react-native-async-storage/async-storage
+- @react-native-community/datetimepicker
+- @react-native-picker/picker
+- @react-navigation/bottom-tabs
+- @react-navigation/native
+- axios
+- expo-document-picker
+- expo-linking
+- nativewind
+- react-native-animatable
+- react-native-appwrite
+- react-native-reanimated
+- react-navigation
+- @types/jest
+- tailwindcss
+- typescript
 
-## Contributing
 
-Guidelines for contributing to the project. Include information on how to submit issues and pull requests.
-
-## License
-
-Specify the project's license. For example:
-
-This project is licensed under the [MIT License](link-to-license-file).
