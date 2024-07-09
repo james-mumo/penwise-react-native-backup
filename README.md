@@ -14,7 +14,9 @@
   }
 
 
-Response:
+```
+
+- **Response:**
 
 ```json
 {
@@ -38,7 +40,9 @@ Request Body:
   "password": "string"
 }
 
-Response:
+```
+
+- **Response:**
 
 ```json
 {
@@ -55,7 +59,9 @@ Request Body:
 {
   "token": "string"
 }
-Response:
+```
+
+- **Response:**
 
 ```json
 {
@@ -65,7 +71,9 @@ Response:
 HTTP Method: GET
 URL: /api/auth/me
 Description: Retrieves details of the authenticated user.
-Response:
+```
+
+- **Response:**
 
 ```json
 {
@@ -85,7 +93,9 @@ Request Body:
   "email": "string",
   "username": "string"
 }
-Response:
+```
+
+- **Response:**
 
 ```json
 {
@@ -105,7 +115,9 @@ Request Body:
   "color": "string",
   "isEditable": true
 }
-Response:
+```
+
+- **Response:**
 
 ```json
 {
@@ -120,7 +132,9 @@ Response:
 HTTP Method: GET
 URL: /api/category-entries
 Description: Retrieves all categories for the authenticated user.
-Response:
+```
+
+- **Response:**
 
 ```json
 [
@@ -138,7 +152,9 @@ Response:
 HTTP Method: GET
 URL: /api/category-entries/:id
 Description: Retrieves a specific category by ID.
-Response:
+```
+
+- **Response:**
 
 ```json
 {
@@ -161,7 +177,9 @@ Request Body:
   "color": "string",
   "isEditable": true
 }
-Response:
+```
+
+- **Response:**
 
 ```json
 {
@@ -176,7 +194,9 @@ Response:
 HTTP Method: DELETE
 URL: /api/category-entries/:id
 Description: Deletes a category by ID.
-Response:
+```
+
+- **Response:**
 204 No Content on successful deletion.
 Journal Entries
 1. Create Journal Entry
@@ -192,7 +212,9 @@ Request Body:
   "category_id": "string",
   "date": "string"
 }
-Response:
+```
+
+- **Response:**
 
 ```json
 {
@@ -208,7 +230,9 @@ Response:
 HTTP Method: GET
 URL: /api/journal-entries
 Description: Retrieves all journal entries for the authenticated user.
-Response:
+```
+
+- **Response:**
 
 ```json
 [
@@ -227,7 +251,9 @@ Response:
 HTTP Method: GET
 URL: /api/journal-entries/:id
 Description: Retrieves a specific journal entry by ID.
-Response:
+```
+
+- **Response:**
 
 ```json
 {
@@ -252,7 +278,9 @@ Request Body:
   "categoryId": "string",
   "date": "string"
 }
-Response:
+```
+
+- **Response:**
 
 ```json
 {
@@ -268,9 +296,12 @@ Response:
 HTTP Method: DELETE
 URL: /api/journal-entries/:id
 Description: Deletes a journal entry by ID.
-Response:
+
+```
+
+- **Response:**
 204 No Content on successful deletion.
 css
-Copy code
+
 
 This Markdown format provides a structured and readable representation of the API endpo
