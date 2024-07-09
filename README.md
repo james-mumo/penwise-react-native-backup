@@ -195,15 +195,105 @@ in the `package.json` for the React Native Expo app.
 
 ## License -->
 
+<div align="center">
+
+```bash
+    This is the backend service for the React-Native Frontend built with Express.Js, Typescript and Postgres DB
+```
+</div>
 
 
-# PenWise Journaling App Backend
+## Prerequisites
 
-## Overview
+Before running and intsalling the project's backend service, ensure you have the following installed.
 
-This project is the backend for the PenWise Journaling App. It handles user authentication, journal entry management, and categorization of journal entries. The backend is built using TypeScript and Express.js, with PostgreSQL as the database.
+| Binaries      | Version    |
+| ------------- | ---------- |
+| Node.js       | >= 18.9.1  |
+| npm           | >= 9.2.0   |
+| TypeScript    | >= 4.0.0   |
+| Ngrok         | >= 3.8.0  |
 
-## Project Structure
+
+
+## Backed Installation & Setup
+
+1. Clone the repository:
+
+```bash
+
+    git clone https://github.com/james-mumo/PenWise-Journaling-App
+
+    cd backend
+```
+
+2. Install dependencies:
+
+   ```bash
+        npm install
+    ```
+
+3. Configure Environment Variables:
+
+    ```bash
+        Create a .env File: In the root directory of your project, create a file named <.env> & add the following variables:
+    ```
+    ```bash
+        # Backend server port
+        PORT=5000
+
+        # Tokens for JWT (generated using require('crypto').randomBytes(64).toString('hex'))
+        JWT_ACCESS_SECRET="be2097cb5520dbb8554d420f16ada822edb96f6a88df175969bb41f84310d61d5c701a1100eab84629c26fa42e5eea667f7c7d323b62fbcc036df1e07696a6a5"
+        JWT_REFRESH_SECRET="be2097cb5520dbb8554d420f16ada822edb96f6a88df175969bb41f84310d61d5c701a1100eab84629c26fa42e5eea667f7c7d323b62fbcc036df1e07696a6a5"
+
+        # PostgreSQL connection URL
+        DATABASE_URL=postgres://postgres:123456@localhost:5432/penwise
+
+        ```
+
+
+
+
+
+3. Set up the database
+
+    - Create a PostgreSQL database.
+    - Run the SQL script to initialize the schema:
+    - Ensure the Postgress Service is up and running
+    - Test the Postgres-database connection string{DATABASE_URL}, sample is as below:
+
+   ```bash
+        postgresql://postgres:123456@localhost:5432/penwise
+    ```
+     
+
+4. Configure environment variables
+
+```bash
+- Create a `.env` file in the root directory and add the following environment variables (e.g., PORT, JWT_ACCESS_SECRET, JWT_REFRESH_SECRET, DATABASE_URL).
+```
+
+## Application Availability
+
+```bash
+The application will be available at http://localhost:${PORT}.
+```
+
+## Contributing
+
+```bash
+Feel free to submit issues, fork the repository, and send pull requests! This project is a take-home assignment that I am working on independently. However, if you are interested in the application, you are welcome to fork the repository and contribute to making it better.
+```
+
+<!-- ## License -->
+<!-- 
+```bash
+    This project is licensed under the MIT License. See the LICENSE file for details.
+``` -->
+
+
+
+## Project Directory Structure
 
 The backend project is organized into several folders and files, each serving a specific purpose. Below is the file tree representation of the project:
 
@@ -312,55 +402,3 @@ Before you begin, ensure you have the following installed:
   "typescript": "^5.5.3"
 }
 ```
-
-### Installation
-
-1. Clone the repository:
-
-```bash
-
-    git clone https://github.com/james-mumo/PenWise-Journaling-App
-
-    cd backend
-```
-
-2. Install dependencies:
-   ```bash
-   npm install
-
-3. Set up the database
-
-    - Create a PostgreSQL database.
-    - Run the SQL script to initialize the schema:
-    - Ensure the Postgress Service is up and running
-    - Test the Postgres-database connection string{DATABASE_URL}, sample is as below:
-
-   ```bash
-        postgresql://postgres:123456@localhost:5432/penwise
-    ```
-     
-
-4. Configure environment variables
-
-```bash
-- Create a `.env` file in the root directory and add the following environment variables (e.g., PORT, JWT_ACCESS_SECRET, JWT_REFRESH_SECRET, DATABASE_URL).
-```
-
-## Application Availability
-
-```bash
-The application will be available at http://localhost:${PORT}.
-```
-
-## Contributing
-
-```bash
-Feel free to submit issues, fork the repository, and send pull requests! This project is a take-home assignment that I am working on independently. However, if you are interested in the application, you are welcome to fork the repository and contribute to making it better.
-```
-
-<!-- ## License -->
-<!-- 
-```bash
-    This project is licensed under the MIT License. See the LICENSE file for details.
-``` -->
-
