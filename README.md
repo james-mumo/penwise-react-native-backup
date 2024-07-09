@@ -195,10 +195,13 @@ in the `package.json` for the React Native Expo app.
 
 ## License -->
 
+## Express, Typescript with Postgres Backend
+
 <div align="center">
 
 ```bash
-    This is the backend service for the React-Native Frontend built with Express.Js, Typescript and Postgres DB
+    This is the backend service for the React-Native Frontend 
+    built with Express.Js, Typescript and Postgres DB
 ```
 </div>
 
@@ -216,7 +219,7 @@ Before running and intsalling the project's backend service, ensure you have the
 
 
 
-## Backed Installation & Setup
+## Backend Setup & Installation
 
 1. Clone the repository:
 
@@ -229,27 +232,26 @@ Before running and intsalling the project's backend service, ensure you have the
 
 2. Install dependencies:
 
-   ```bash
-        npm install
-    ```
+```bash
+    npm install
+```
 
 3. Configure Environment Variables:
 
-    ```bash
-        Create a .env File: In the root directory of your project, create a file named <.env> & add the following variables:
-    ```
-    ```bash
-        # Backend server port
-        PORT=
+    -   Create a .env File: In the root directory of your project, create a file named <.env> & add the following variables:
 
-        # Tokens for JWT (generated using require('crypto').randomBytes(64).toString('hex'))
-        JWT_ACCESS_SECRET="be2097cb5520dbb8554d420f16ada822edb96f6a88df175969bb41f84310d61d5c701a1100eab84629c26fa42e5eea667f7c7d323b62fbcc036df1e07696a6a5"
-        JWT_REFRESH_SECRET="be2097cb5520dbb8554d420f16ada822edb96f6a88df175969bb41f84310d61d5c701a1100eab84629c26fa42e5eea667f7c7d323b62fbcc036df1e07696a6a5"
+```bash
+    # Backend server port
+    PORT=
 
-        # PostgreSQL connection URL
-        DATABASE_URL=postgres://postgres:123456@localhost:5432/penwise
+    # Tokens for JWT (generated using require('crypto').randomBytes(64).toString('hex'))
+    JWT_ACCESS_SECRET="be2097cb5520dbb8554d420f16ada822edb96f6a88df175969bb41f84310d61d5c701a1100eab84629c26fa42e5eea667f7c7d323b62fbcc036df1e07696a6a5"
+    JWT_REFRESH_SECRET="be2097cb5520dbb8554d420f16ada822edb96f6a88df175969bb41f84310d61d5c701a1100eab84629c26fa42e5eea667f7c7d323b62fbcc036df1e07696a6a5"
 
-        ```
+    # PostgreSQL connection URL
+    DATABASE_URL=postgres://postgres:123456@localhost:5432/penwise
+
+```
 
 
 
