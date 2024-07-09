@@ -210,7 +210,7 @@
 
 ### 5. Delete Category
 - **HTTP Method:** DELETE
-- **URL:** /api/category-entries/:id
+- **URL:** `/api/category-entries/:id`
 - **Description:** Deletes a category by ID.
 
 - **Response:**
@@ -219,14 +219,14 @@
     {
     "res":"204 No Content on successful deletion."
      }
-       ```
+    ```
 
 
 ## Journal Entries
 
 ### 1. Create Journal Entry
 HTTP Method: POST
-URL: /api/journal-entries
+URL: `/api/journal-entries`
 Description: Creates a new journal entry.
 Request Body:
 
@@ -241,21 +241,23 @@ Request Body:
 
 - **Response:**
 
-```json
-{
-  "title": "string",
-  "content": "string",
-  "categoryId": "string",
-  "userId": "string",
-  "date": "string",
-  "createdAt": "string",
-  "updatedAt": "string"
-}
-2. Get All Journal Entries
-HTTP Method: GET
-URL: /api/journal-entries
-Description: Retrieves all journal entries for the authenticated user.
-```
+    ```json
+    {
+    "title": "string",
+    "content": "string",
+    "categoryId": "string",
+    "userId": "string",
+    "date": "string",
+    "createdAt": "string",
+    "updatedAt": "string"
+    }
+    ```
+
+### 2. Get All Journal Entries
+- **HTTP Method:** GET
+- **URL:** `/api/journal-entries`
+- **Description:** Retrieves all journal entries for the authenticated user.
+
 
 - **Response:**
 
@@ -269,62 +271,66 @@ Description: Retrieves all journal entries for the authenticated user.
     "date": "string",
     "createdAt": "string",
     "updatedAt": "string"
-  },
-  ...
+  }
 ]
-3. Get Journal Entry by ID
-HTTP Method: GET
-URL: /api/journal-entries/:id
-Description: Retrieves a specific journal entry by ID.
 ```
+
+
+### 3. Get Journal Entry by ID
+- **HTTP Method:** GET
+- **URL:** `/api/journal-entries/:id`
+- **Description:** Retrieves a specific journal entry by ID.
 
 - **Response:**
 
-```json
-{
-  "title": "string",
-  "content": "string",
-  "categoryId": "string",
-  "userId": "string",
-  "date": "string",
-  "createdAt": "string",
-  "updatedAt": "string"
-}
-4. Update Journal Entry
-HTTP Method: PUT
-URL: /api/journal-entries/:id
-Description: Updates a journal entry by ID.
-Request Body:
+    ```json
+    {
+    "title": "string",
+    "content": "string",
+    "categoryId": "string",
+    "userId": "string",
+    "date": "string",
+    "createdAt": "string",
+    "updatedAt": "string"
+    }
+    ```
 
-```json
-{
-  "title": "string",
-  "content": "string",
-  "categoryId": "string",
-  "date": "string"
-}
-```
+### 4. Update Journal Entry
+- **HTTP Method:** PUT
+- **URL:** `/api/journal-entries/:id`
+- **Description:** Updates a journal entry by ID.
+- **Request Body:**
+
+    ```json
+    {
+    "title": "string",
+    "content": "string",
+    "categoryId": "string",
+    "date": "string"
+    }
+    ```
+
+- **Response:**
+
+    ```json
+    {
+    "title": "string",
+    "content": "string",
+    "categoryId": "string",
+    "userId": "string",
+    "date": "string",
+    "createdAt": "string",
+    "updatedAt": "string"
+    }
+    ```
+### 5. Delete Journal Entry
+- **HTTP Method:** DELETE
+- **URL:** `/api/journal-entries/:id`
+- **Description:** Deletes a journal entry by ID.
+
 
 - **Response:**
 
-```json
-{
-  "title": "string",
-  "content": "string",
-  "categoryId": "string",
-  "userId": "string",
-  "date": "string",
-  "createdAt": "string",
-  "updatedAt": "string"
-}
-5. Delete Journal Entry
-HTTP Method: DELETE
-URL: /api/journal-entries/:id
-Description: Deletes a journal entry by ID.
-
-```
-
-- **Response:**
 204 No Content on successful deletion.
 css
 
