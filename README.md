@@ -239,7 +239,7 @@ Before running and intsalling the project's backend service, ensure you have the
 
 3. Configure Environment Variables:
 
-    -   Create .env File: In the root directory of your project, create a file named .env & add the following variables:
+    -   In the root directory of your project, create a file named .env & add the following variables:
 
 ```bash
     # Backend server port
