@@ -245,7 +245,7 @@ Before running and intsalling the project's backend service, ensure you have the
     # Backend server port
     PORT=""
 
-  # (can be generated securely using crypto.randomBytes(64).toString('hex'))
+    # (can be generated securely using crypto.randomBytes(64).toString('hex'))
     JWT_ACCESS_SECRET=""
     JWT_REFRESH_SECRET=""
 
@@ -256,34 +256,30 @@ Before running and intsalling the project's backend service, ensure you have the
 ```
 
 
-3. Set up the database
+3. Migration and Database Initialization
 
-    - Create a PostgreSQL database.
-    - Run the SQL script to initialize the schema:
-    - Ensure the Postgress Service is up and running
-    - Test the Postgres-database connection string{DATABASE_URL}, sample is as below:
+```bash 
+    - Run the SQL script named {init.sql} to initialize the schema and seed any default data you might need
 
-   ```bash
-        postgresql://postgres:123456@localhost:5432/penwise
-    ```
+    - Ensure the PostgreSQL service is up and running.
 
-  ### 4. Migration and Database Initialization
-
-- **Run the SQL script named {init.sql} to initialize the schema and seed any default data you might need**
-  Ensure the PostgreSQL service is up and running.
-
+```
 
 
 ## Application Availability
 
 ```bash
-The application will be available at http://localhost:${PORT}.
+    The application will be available at http://localhost:${PORT}.
 ```
 
 
-```bash
-Feel free to submit issues, fork the repository, and send pull requests! This project is a take-home assignment that I am working on independently. However, if you are interested in the application, you are welcome to fork the repository and contribute to making it better.
-```
+## Contribution
+        ```bash
+        Feel free to submit issues, fork the repository, and send pull requests!
+        This project is a take-home assignment that I am working on independently.
+        However, if you are interested in the application, you are welcome to fork
+        the repository and contribute to making it better as per your wish.
+        ```
 
 
 
