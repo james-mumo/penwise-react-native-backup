@@ -53,7 +53,7 @@
 
 ### 3. Refresh Token
 - **HTTP Method:** POST
-- **URL:** /api/auth/token
+- **URL:** `/api/auth/token`
 - **Description:** Refreshes the access token using a valid refresh token.
 - **Request Body:**
 
@@ -65,75 +65,85 @@
 
 - **Response:**
 
-```json
-{
-  "accessToken": "string"
-}
-4. Get User Details
-HTTP Method: GET
-URL: /api/auth/me
-Description: Retrieves details of the authenticated user.
-```
+    ```json
+    {
+    "accessToken": "string"
+    }
+    ```
+
+### 4. Get User Details
+- **HTTP Method:** GET
+- **URL:** `/api/auth/me`
+- **Description:** Retrieves details of the authenticated user.
 
 - **Response:**
 
-```json
-{
-  "username": "string",
-  "email": "string"
-}
-5. Update User Details
-HTTP Method: PUT
-URL: /api/auth/update
-Description: Updates user details such as email, username, or password.
-Request Body:
+    ```json
+    {
+    "username": "string",
+    "email": "string"
+    }
+    ```
 
-```json
-{
-  "currentPassword": "string",
-  "newPassword": "string",
-  "email": "string",
-  "username": "string"
-}
-```
+### 5. Update User Details
+- **HTTP Method:** PUT
+- **URL:** `/api/auth/update`
+- **Description:** Updates user details such as email, username, or password.
+- **Request Body:**
+
+    ```json
+    {
+    "currentPassword": "string",
+    "newPassword": "string",
+    "email": "string",
+    "username": "string"
+    }
+    ```
 
 - **Response:**
 
-```json
-{
-  "accessToken": "string",
-  "refreshToken": "string"
-}
-Categories
+    ```json
+    {
+    "accessToken": "string",
+    "refreshToken": "string"
+    }
+    ```
+
+## Categories
+
 1. Create Category
-HTTP Method: POST
-URL: /api/category-entries
-Description: Creates a new category for organizing journal entries.
-Request Body:
+- **HTTP Method:** POST
+- **URL:** `/api/category-entries`
+- **Description:** Creates a new category for organizing journal entries.
+- **Request Body:**
 
-```json
-{
-  "name": "string",
-  "color": "string",
-  "isEditable": true
-}
-```
+    ```json
+    {
+    "name": "string",
+    "color": "string",
+    "isEditable": true
+    }
+    ```
 
 - **Response:**
 
-```json
-{
-  "name": "string",
-  "color": "string",
-  "isEditable": true,
-  "userId": "string",
-  "createdAt": "string",
-  "updatedAt": "string"
-}
-2. Get All Categories
-HTTP Method: GET
-URL: /api/category-entries
-Description: Retrieves all categories for the authenticated user.
+    ```json
+    {
+    "name": "string",
+    "color": "string",
+    "isEditable": true,
+    "userId": "string",
+    "createdAt": "string",
+    "updatedAt": "string"
+    }
+    ```
+
+
+### 2. Get All Categories
+
+- **HTTP Method:** GET
+- **URL:** `/api/category-entries`
+- **Description:** Retrieves all categories for the authenticated user.
 ```
 
 - **Response:**
