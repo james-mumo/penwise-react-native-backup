@@ -331,12 +331,12 @@ backend/
 
 ## Contribution
 
-        ```bash
+    ```bash
 
-            Feel free to submit issues, fork the repository, and send pull requests!
-            This project is a take-home assignment that I am working on independently.
-            However, if you are interested in the application, you are welcome to fork
-            the repository and contribute to making it better as per your wish.
+        Feel free to submit issues, fork the repository, and send pull requests!
+        This project is a take-home assignment that I am working on independently.
+        However, if you are interested in the application, you are welcome to fork
+        the repository and contribute to making it better as per your wish.
 
-        ```
+    ```
 
