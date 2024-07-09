@@ -203,6 +203,7 @@ in the `package.json` for the React Native Expo app.
     This is the backend service for the React-Native Frontend 
     built with Express.Js, Typescript and Postgres DB
 ```
+
 </div>
 
 
@@ -238,23 +239,21 @@ Before running and intsalling the project's backend service, ensure you have the
 
 3. Configure Environment Variables:
 
-    -   Create a .env File: In the root directory of your project, create a file named <.env> & add the following variables:
+    -   Create .env File: In the root directory of your project, create a file named .env & add the following variables:
 
 ```bash
     # Backend server port
-    PORT=
+    PORT=""
 
-    # Tokens for JWT (generated using require('crypto').randomBytes(64).toString('hex'))
-    JWT_ACCESS_SECRET="be2097cb5520dbb8554d420f16ada822edb96f6a88df175969bb41f84310d61d5c701a1100eab84629c26fa42e5eea667f7c7d323b62fbcc036df1e07696a6a5"
-    JWT_REFRESH_SECRET="be2097cb5520dbb8554d420f16ada822edb96f6a88df175969bb41f84310d61d5c701a1100eab84629c26fa42e5eea667f7c7d323b62fbcc036df1e07696a6a5"
+  # (can be generated securely using crypto.randomBytes(64).toString('hex'))
+    JWT_ACCESS_SECRET=""
+    JWT_REFRESH_SECRET=""
+
 
     # PostgreSQL connection URL
     DATABASE_URL=postgres://postgres:123456@localhost:5432/penwise
 
 ```
-
-
-
 
 
 3. Set up the database
@@ -267,13 +266,13 @@ Before running and intsalling the project's backend service, ensure you have the
    ```bash
         postgresql://postgres:123456@localhost:5432/penwise
     ```
-     
 
-4. Configure environment variables
+  ### 4. Migration and Database Initialization
 
-```bash
-- Create a `.env` file in the root directory and add the following environment variables (e.g., PORT, JWT_ACCESS_SECRET, JWT_REFRESH_SECRET, DATABASE_URL).
-```
+- **Run the SQL script named {init.sql} to initialize the schema and seed any default data you might need**
+  Ensure the PostgreSQL service is up and running.
+
+
 
 ## Application Availability
 
@@ -281,17 +280,11 @@ Before running and intsalling the project's backend service, ensure you have the
 The application will be available at http://localhost:${PORT}.
 ```
 
-## Contributing
 
 ```bash
 Feel free to submit issues, fork the repository, and send pull requests! This project is a take-home assignment that I am working on independently. However, if you are interested in the application, you are welcome to fork the repository and contribute to making it better.
 ```
 
-<!-- ## License -->
-<!-- 
-```bash
-    This project is licensed under the MIT License. See the LICENSE file for details.
-``` -->
 
 
 
