@@ -170,16 +170,17 @@
 
 - **Response:**
 
-```json
-{
-  "name": "string",
-  "color": "string",
-  "isEditable": true,
-  "userId": "string",
-  "createdAt": "string",
-  "updatedAt": "string"
-}
-```
+    ```json
+    {
+    "name": "string",
+    "color": "string",
+    "isEditable": true,
+    "userId": "string",
+    "createdAt": "string",
+    "updatedAt": "string"
+    }
+    ```
+
 ### 4. Update Category
 
 - **HTTP Method:** PUT
@@ -212,12 +213,13 @@
 - **HTTP Method:** DELETE
 - **URL:** `/api/category-entries/:id`
 - **Description:** Deletes a category by ID.
+- **Parameters:**:id (integer): ID of the category to delete.
 
 - **Response:**
 
     ```json
     {
-    "res":"204 No Content on successful deletion."
+      "message": "Category deleted successfully"
      }
     ```
 
@@ -230,14 +232,14 @@ URL: `/api/journal-entries`
 Description: Creates a new journal entry.
 Request Body:
 
-```json
-{
-  "title": "string",
-  "content": "string",
-  "category_id": "string",
-  "date": "string"
-}
-```
+    ```json
+    {
+    "title": "string",
+    "content": "string",
+    "category_id": "string",
+    "date": "string"
+    }
+    ```
 
 - **Response:**
 
@@ -261,19 +263,19 @@ Request Body:
 
 - **Response:**
 
-```json
-[
-  {
-    "title": "string",
-    "content": "string",
-    "categoryId": "string",
-    "userId": "string",
-    "date": "string",
-    "createdAt": "string",
-    "updatedAt": "string"
-  }
-]
-```
+    ```json
+    [
+    {
+        "title": "string",
+        "content": "string",
+        "categoryId": "string",
+        "userId": "string",
+        "date": "string",
+        "createdAt": "string",
+        "updatedAt": "string"
+    }
+    ]
+    ```
 
 
 ### 3. Get Journal Entry by ID
@@ -327,12 +329,13 @@ Request Body:
 - **HTTP Method:** DELETE
 - **URL:** `/api/journal-entries/:id`
 - **Description:** Deletes a journal entry by ID.
-
+- **Parameters:**:id (integer): ID of the journal entry to delete.
 
 - **Response:**
+    ```json
+        {
+        "message": "Journal entry item deleted successfully"
+        }   
+    ```
 
-204 No Content on successful deletion.
-css
 
-
-This Markdown format provides a structured and readable representation of the API endpo
