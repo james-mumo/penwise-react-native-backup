@@ -111,7 +111,8 @@
 
 ## Categories
 
-1. Create Category
+### 1. Create Category
+
 - **HTTP Method:** POST
 - **URL:** `/api/category-entries`
 - **Description:** Creates a new category for organizing journal entries.
@@ -144,74 +145,86 @@
 - **HTTP Method:** GET
 - **URL:** `/api/category-entries`
 - **Description:** Retrieves all categories for the authenticated user.
-```
+
+
+- **Response:**
+
+    ```json
+    [
+    {
+        "name": "string",
+        "color": "string",
+        "isEditable": true,
+        "userId": "string",
+        "createdAt": "string",
+        "updatedAt": "string"
+    },
+    ]
+    ```
+
+### 3. Get Category by ID
+- **HTTP Method:** GET
+- **URL:** `/api/category-entries/:id`
+- **Description:** Retrieves a specific category by ID.
+
 
 - **Response:**
 
 ```json
-[
-  {
+{
+  "name": "string",
+  "color": "string",
+  "isEditable": true,
+  "userId": "string",
+  "createdAt": "string",
+  "updatedAt": "string"
+}
+```
+### 4. Update Category
+
+- **HTTP Method:** PUT
+- **URL:** `/api/category-entries/:id`
+- **Description:** Updates a category's name, color, and editability by ID.
+- **Request Body:**
+
+    ```json
+    {
+    "name": "string",
+    "color": "string",
+    "isEditable": true
+    }
+    ```
+
+- **Response:**
+
+    ```json
+    {
     "name": "string",
     "color": "string",
     "isEditable": true,
     "userId": "string",
     "createdAt": "string",
     "updatedAt": "string"
-  },
-  ...
-]
-3. Get Category by ID
-HTTP Method: GET
-URL: /api/category-entries/:id
-Description: Retrieves a specific category by ID.
-```
+    }
+    ```
+
+### 5. Delete Category
+- **HTTP Method:** DELETE
+- **URL:** /api/category-entries/:id
+- **Description:** Deletes a category by ID.
 
 - **Response:**
 
-```json
-{
-  "name": "string",
-  "color": "string",
-  "isEditable": true,
-  "userId": "string",
-  "createdAt": "string",
-  "updatedAt": "string"
-}
-4. Update Category
-HTTP Method: PUT
-URL: /api/category-entries/:id
-Description: Updates a category's name, color, and editability by ID.
-Request Body:
+    ```json
+    {
+    "res":"204 No Content on successful deletion."
+     }
+       ```
 
-```json
-{
-  "name": "string",
-  "color": "string",
-  "isEditable": true
-}
-```
 
-- **Response:**
+## Journal Entries
 
-```json
-{
-  "name": "string",
-  "color": "string",
-  "isEditable": true,
-  "userId": "string",
-  "createdAt": "string",
-  "updatedAt": "string"
-}
-5. Delete Category
-HTTP Method: DELETE
-URL: /api/category-entries/:id
-Description: Deletes a category by ID.
-```
-
-- **Response:**
-204 No Content on successful deletion.
-Journal Entries
-1. Create Journal Entry
+### 1. Create Journal Entry
 HTTP Method: POST
 URL: /api/journal-entries
 Description: Creates a new journal entry.
