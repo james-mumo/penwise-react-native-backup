@@ -6,60 +6,62 @@
 - **URL:** `/api/auth/register`
 - **Description:** Creates a new user account.
 - **Request Body:**
-  ```json
-  {
-    "username": "string",
+  
+    ```json
+    {
+        "username": "string",
+        "email": "string",
+        "password": "string"
+    }
+    ```
+
+- **Response:**
+
+    ```json
+    {
+    "accessToken": "string",
+    "refreshToken": "string",
+    "user": {
+        "username": "string",
+        "email": "string"
+    }
+    }
+    ```
+
+### 2. Login User
+- **HTTP Method:** POST
+- **URL:** `/api/auth/login`
+- **Description:** Logs in an existing user.
+- **Request Body:**
+
+    ```json
+    {
     "email": "string",
     "password": "string"
-  }
+    }
 
-
-```
-
-- **Response:**
-
-```json
-{
-  "accessToken": "string",
-  "refreshToken": "string",
-  "user": {
-    "username": "string",
-    "email": "string"
-  }
-}
-
-2. Login User
-HTTP Method: POST
-URL: /api/auth/login
-Description: Logs in an existing user.
-Request Body:
-
-```json
-{
-  "email": "string",
-  "password": "string"
-}
-
-```
+    ```
 
 - **Response:**
 
-```json
-{
-  "accessToken": "string",
-  "refreshToken": "string"
-}
-3. Refresh Token
-HTTP Method: POST
-URL: /api/auth/token
-Description: Refreshes the access token using a valid refresh token.
-Request Body:
+    ```json
+    {
+    "accessToken": "string",
+    "refreshToken": "string"
+    }
+    ```
 
-```json
-{
-  "token": "string"
-}
-```
+### 3. Refresh Token
+- **HTTP Method:** POST
+- **URL:** /api/auth/token
+- **Description:** Refreshes the access token using a valid refresh token.
+- **Request Body:**
+
+    ```json
+    {
+    "token": "string"
+    }
+    ```
 
 - **Response:**
 
