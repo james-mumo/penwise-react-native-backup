@@ -240,7 +240,7 @@ Before running and intsalling the project's backend service, ensure you have the
     ```
     ```bash
         # Backend server port
-        PORT=5000
+        PORT=
 
         # Tokens for JWT (generated using require('crypto').randomBytes(64).toString('hex'))
         JWT_ACCESS_SECRET="be2097cb5520dbb8554d420f16ada822edb96f6a88df175969bb41f84310d61d5c701a1100eab84629c26fa42e5eea667f7c7d323b62fbcc036df1e07696a6a5"
