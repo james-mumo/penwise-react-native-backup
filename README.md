@@ -249,7 +249,6 @@ Before running and intsalling the project's backend service, ensure you have the
     JWT_ACCESS_SECRET=""
     JWT_REFRESH_SECRET=""
 
-
     # PostgreSQL connection URL
     DATABASE_URL=postgres://postgres:123456@localhost:5432/penwise
 
@@ -330,76 +329,14 @@ backend/
 ```
 
 
-## Folder and File Descriptions
-
-- **config**: Contains configuration files.
-  - `database.ts`: Database connection and configuration.
-
-- **controllers**: Contains the controller files that handle the application logic for different routes.
-  - `authController.ts`: Handles user authentication-related operations.
-  - `journalEntryController.ts`: Manages journal entries.
-
-- **dist**: Compiled output directory.
-  - `ex.ts`: Example or test file.
-  - `index.ts`: Entry point of the application.
-
-- **init.sql**: SQL initialization script for setting up the database schema.
-
-- **middlewares**: Contains middleware files.
-  - `authMiddleware.ts`: Middleware for authentication.
-
-- **models**: Contains the data models.
-  - `JournalEntry.ts`: Model for journal entries.
-  - `User.ts`: Model for users.
-
-- **routes**: Contains the route files.
-  - `auth.ts`: Routes for user authentication.
-  - `journalEntryRoutes.ts`: Routes for journal entry operations.
-
-- **tsconfig.json**: TypeScript configuration file.
-
-- **utils**: Utility functions.
-  - `jwt.ts`: Functions for handling JSON Web Tokens (JWT).
-
-## Getting Started
-
-### Prerequisites
-
-Before you begin, ensure you have the following installed:
-
-- Node.js (version >= 16.0.0)
-- PostgreSQL (version >= 9.0)
-
-### Dependencies
-
-```json
-"dependencies": {
-  "bcrypt": "^5.1.1",
-  "dotenv": "^16.4.5",
-  "express": "^4.19.2",
-  "jsonwebtoken": "^9.0.2",
-  "pg": "^8.12.0"
-}
-```
-
-```json
-"devDependencies": {
-  "@types/bcrypt": "^5.0.2",
-  "@types/dotenv": "^8.2.0",
-  "@types/express": "^4.17.21",
-  "@types/jsonwebtoken": "^9.0.6",
-  "@types/pg": "^8.11.6",
-  "nodemon": "^3.1.4",
-  "typescript": "^5.5.3"
-}
-```
-
 ## Contribution
 
         ```bash
-        Feel free to submit issues, fork the repository, and send pull requests!
-        This project is a take-home assignment that I am working on independently.
-        However, if you are interested in the application, you are welcome to fork
-        the repository and contribute to making it better as per your wish.
+
+            Feel free to submit issues, fork the repository, and send pull requests!
+            This project is a take-home assignment that I am working on independently.
+            However, if you are interested in the application, you are welcome to fork
+            the repository and contribute to making it better as per your wish.
+
         ```
 
