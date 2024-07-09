@@ -259,7 +259,8 @@ Before running and intsalling the project's backend service, ensure you have the
 3. Migration and Database Initialization
 
 ```bash 
-    - Run the SQL script named {init.sql} to initialize the schema and seed any default data you might need
+    - Run the SQL script named {init.sql} to initialize the schema and seed any default
+     data you might need
 
     - Ensure the PostgreSQL service is up and running.
 
@@ -270,18 +271,17 @@ Before running and intsalling the project's backend service, ensure you have the
 
 ```bash
     The application will be available at http://localhost:${PORT}.
+
+    To ensure the backend url is exposed, secure and able to be run through the Expo-Go on
+    IOS or Android:
+
+    - Expose the backend url with the following command using {Ngrok}
+        
 ```
 
-
-## Contribution
-        ```bash
-        Feel free to submit issues, fork the repository, and send pull requests!
-        This project is a take-home assignment that I am working on independently.
-        However, if you are interested in the application, you are welcome to fork
-        the repository and contribute to making it better as per your wish.
-        ```
-
-
+```bash
+    ngrok http http://localhost:${PORT}
+```
 
 
 ## Project Directory Structure
@@ -393,3 +393,13 @@ Before you begin, ensure you have the following installed:
   "typescript": "^5.5.3"
 }
 ```
+
+## Contribution
+
+        ```bash
+        Feel free to submit issues, fork the repository, and send pull requests!
+        This project is a take-home assignment that I am working on independently.
+        However, if you are interested in the application, you are welcome to fork
+        the repository and contribute to making it better as per your wish.
+        ```
+
