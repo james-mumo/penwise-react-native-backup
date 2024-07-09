@@ -213,7 +213,7 @@
 - **HTTP Method:** DELETE
 - **URL:** `/api/category-entries/:id`
 - **Description:** Deletes a category by ID.
-- **Parameters:**:id (integer): ID of the category to delete.
+- **Parameters:** `id` (integer): ID of the category to delete.
 
 - **Response:**
 
@@ -227,10 +227,10 @@
 ## Journal Entries
 
 ### 1. Create Journal Entry
-HTTP Method: POST
-URL: `/api/journal-entries`
-Description: Creates a new journal entry.
-Request Body:
+- **HTTP Method:** POST
+- **URL:** `/api/journal-entries`
+- **Description:** Creates a new journal entry.
+- **Request Body:**
 
     ```json
     {
